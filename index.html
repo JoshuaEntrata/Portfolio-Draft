@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!--link to css-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--Inter font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Jost:ital,wght@0,600;1,600&family=Montserrat+Subrayada&display=swap" rel="stylesheet"> 
+
+    <!--box icons-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--navigation bar section-->
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--home section-->
+     <!--home-->
+     <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm</h3>
+            <h1>Joshua Entrata</h1>
+            <h5>a Computer Science student <span>from University of Santo Tomas</span></h5>
+            <div class="send-email" id="send-email">
+                <p>Want to discuss something? Send me an email.</p>
+                <div class="action">
+                    <form>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/home-picture.png">
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about-picture.png">
+        </div>
+
+        <div class="about-text">
+            <h3>About me</h3>
+            <h2>Hello! I'm Joshua but my friends call me Kess.</h2>
+            <p>
+            I am currently studying at University of Santo Tomas. At every first meeting, most people see me as a serious and introverted person but truth be told I joke a lot and my friends always tell me that I’m very fun to be with. <br><br>
+
+            Though I take my academics seriously, I also have hobbies such as playing basketball and going to the gym. Since my goal is to make my family proud and give back to my parents, I always tell myself that I need to do good in the things I do. I am a committed and goal-oriented person and tries to be better everyday.
+            </p>
+        </div>
+    </section>
+
+    <!--skills under about-->
+    <section class="skills">
+        <div class="items">
+            <div class="skill-box">
+                <div class="skill-img">
+                    <img src="img/laptop-logo.png">
+                </div>
+                <h3>Programming Languages</h3>
+                <p>Created a simple working programs with Java, C++, and Python. Built webpages with HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-img">
+                    <img src="img/group-logo.png">
+                </div>
+                <h3>People skills</h3>
+                <p>Participated in a school organization that enhanced my communication and organization skills.</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-img">
+                    <img src="img/person-logo.png">
+                </div>
+                <h3>Analytical and Problem-solving</h3>
+                <p>Able to identify existing problems, generate potential solutions, and solve problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h3>Portfolio</h3>
+            <h2>Check out some of my latest projects.</h2>
+            <p>(Take note: All of these are just examples. I still don't have projects to post in my portfolio. But I am sure that before this year ends, I can showcase real projects in these portfolio website. ;)<br><br>
+                - <a href="#" id="projects">Sample Project # 1 (Rick's iron man suit)</a><br>
+                - <a href="#" id="projects">Sample Project # 2 (Rick's guitar)</a><br>
+                - <a href="#" id="projects">Sample Project # 3 (Rick's futuristic gun collection)</a><br>
+                - <a href="#" id="projects">Sample Project # 4 (Rick's space cruiser)</a><br>
+            </p>
+        </div>
+
+        <div class="slider">
+            <div class="slides layer">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="img/4-portfolio.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/3-portfolio.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/2-portfolio.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/1-portfolio.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto0">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h3>Contact</h3>
+            <h2>Want to reach out?</h2>
+            <h4>Click the social media boxes so you can be redirected to the chosen social media account.</h4>
+        </div>
+            
+        <div class="contact-content">
+            <div class="row one" onclick="location.href='https://www.facebook.com/huaky07/';">
+                <h3>Joshua Kyle Kessel Entrata</h3>
+                <h5>@huaky07</h5>
+                <p>Facebook</p>
+                <i class='bx bxl-facebook' ></i>
+            </div>
+
+            <div class="row two" onclick="location.href='https://twitter.com/kesselentrata';">
+                <h3>KESS.</h3>
+                <h5>@kesselentrata</span></h5>
+                <p>Twitter</p>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+
+            <div class="row three" onclick="location.href='https://www.instagram.com/huaky07/';">
+                <h3>Joshua Entrata</h3>
+                <h5>@huaky07</h5>
+                <p>Instagram</p>
+                <i class='bx bxl-instagram' ></i>
+            </div>
+
+            <div class="row four">
+                <h3>Joshua Entrata</h3>
+                <h5>linkedin tag</span></h5>
+                <p>Linkedin</p>
+                <i class='bx bxl-linkedin-square' ></i>
+            </div>
+        </div>
+    </section>
+
+    <!--end section-->
+    <div class="ends">
+        <p>© 2022 Joshua Kyle K. Entrata</p>
+    </div>
+
+    <!--link to javascript-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
